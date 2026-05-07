@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODIN | Origin Destination Insights &amp; Navigator</title>
+    <meta name="description"
+        content="ODIN — from side project to professional-grade OD validation platform. Spatial intelligence, zone assignment, and R&V analytics for transportation data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+    <nav id="navbar" class="navbar glass">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="ODIN" class="logo-icon">
+                <span class="logo-text">ODIN</span>
+                <span class="badge">v2.5.3</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#evolution">Evolution</a></li>
+                <li><a href="#zone-assign">Zone Assign</a></li>
+                <li><a href="#rv-analytics">R&amp;V Analytics</a></li>
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="https://github.com/iamsankar999/ODIN/releases" class="btn btn-sm btn-primary"
+                        target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        Source
+                    </a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <header id="hero" class="hero">
+        <div class="hero-bg-map"></div>
+        <div class="container hero-content">
+            <img src="images/logo.svg" alt="ODIN Logo" class="hero-logo reveal">
+            <h1 class="hero-title reveal">
+                <span class="hero-title-line">Origin Destination</span>
+                <span class="hero-title-line accent">Insights &amp; Navigator</span>
+            </h1>
+            <p class="hero-subtitle reveal delay-1">What started as a side project is now a professional-grade
+                geospatial validation platform — precision-engineered for transportation data excellence.</p>
+            <div class="hero-actions reveal delay-2">
+                <a href="#evolution" class="btn btn-primary">Our Journey</a>
+                <a href="#zone-assign" class="btn btn-secondary">See It In Action</a>
+            </div>
+            <div class="hero-stats reveal delay-3">
+                <div class="stat">
+                    <span class="stat-value">v2.5.3</span>
+                    <span class="stat-label">Current Release</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">5+</span>
+                    <span class="stat-label">Core Modules</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Offline Capable</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ═══════════════════════════ EVOLUTION ═══════════════════════════ -->
+        <section id="evolution" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">The Journey</span>
+                    <h2>From Side Project to<br>Industry Standard</h2>
+                    <p>ODIN evolved through relentless iteration — each phase solving a deeper problem in transportation
+                        data validation.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-phase">Phase 1 — The Spark</span>
+                            <h3>Excel based Analysis</h3>
+                            <p>It began as a personal fix for a professional bottleneck — manually coding thousands of
+                                survey place-names into administrative zones through a collection of Python scripts</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal delay-1">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-phase">Phase 2 — The Engine</span>
+                            <h3>Intelligent Matching</h3>
+                            <p>The scripts grew into a cohesive engine. Algorithms to suggest Place names were
+                                introduced to handle the chaos of raw, hand-written survey data —
+                                resolving thousands of entries with intelligent suggestions.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal delay-2">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-card glass">
+                            <span class="timeline-phase">Phase 3 — The Platform</span>
+                            <h3>ODIN v2.5.3</h3>
+                            <p>Today, ODIN is a full-scale validation platform with a FastAPI backend, interactive
+                                map-based UI, real-time auto-save, and a powerful Review &amp; Visualization module. It
+                                doesn't just process data — it interprets spatial logic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════ ZONE ASSIGN ═══════════════════════════ -->
+        <section id="zone-assign" class="section section-dark">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Core Module</span>
+                    <h2>Zone Assign Mode</h2>
+                    <p>The heart of ODIN. Resolve survey place-names to administrative zones with intelligent spatial
+                        suggestions, phonetic matching, and interactive map-based selection.</p>
+                </div>
+
+                <div class="video-showcase reveal delay-1">
+                    <div class="video-frame glass">
+                        <video id="zoneAssignVideo" autoplay muted loop playsinline>
+                            <source src="Zoneassign_clip.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-features">
+                        <div class="video-feature glass reveal delay-2">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>PIP Lookups</h4>
+                                <p>Automated Point-in-Polygon against local Shapefiles</p>
+                            </div>
+                        </div>
+                        <div class="video-feature glass reveal delay-3">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="M21 21l-4.35-4.35" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Suggestions</h4>
+                                <p>Double Metaphone + phonetic scoring for noisy data</p>
+                            </div>
+                        </div>
+                        <div class="video-feature glass reveal delay-4">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" />
+                                    <polyline points="17 21 17 13 7 13 7 21" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Auto-Save</h4>
+                                <p>File System Access API — real-time disk sync</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════ R&V ANALYTICS ═══════════════════════════ -->
+        <section id="rv-analytics" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Advanced Analytics</span>
+                    <h2>Review &amp; Visualization</h2>
+                    <p>Deep spatial insights that flag inconsistencies before they impact your final report. Detect,
+                        visualize, and resolve — all in one interface.</p>
+                </div>
+
+                <div class="rv-grid">
+                    <!-- Intrazonal Card -->
+                    <div class="rv-card glass reveal">
+                        <div class="rv-card-header">
+                            <span class="rv-badge intrazonal">Intrazonal Trips</span>
+                        </div>
+                        <div class="rv-card-image">
+                            <img src="images/rv_intrazonal.png"
+                                alt="ODIN Intrazonal Trip Detection — showing origin and destination within the same zone on a map"
+                                loading="lazy">
+                        </div>
+                        <div class="rv-card-body">
+                            <h3>Same-Zone Detection</h3>
+                            <p>Automatically flags trips where Origin and Destination fall within the same
+                                administrative zone. Each trip is mapped with color-coded markers — <strong
+                                    style="color:#10b981;">Origin (Green)</strong>, <strong
+                                    style="color:#ef4444;">Destination (Red)</strong>, and <strong
+                                    style="color:#3b82f6;">Survey Plaza (Blue)</strong> — for instant spatial context.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Illogical Card -->
+                    <div class="rv-card glass reveal delay-1">
+                        <div class="rv-card-header">
+                            <span class="rv-badge illogical">Illogical Pairs</span>
+                        </div>
+                        <div class="rv-card-image">
+                            <img src="images/rv_illogical.png"
+                                alt="ODIN Illogical OD Pair Detection — showing route distance comparison between direct and via-survey paths"
+                                loading="lazy">
+                        </div>
+                        <div class="rv-card-body">
+                            <h3>Spatial Logic Validation</h3>
+                            <p>Compares the direct <strong style="color:#10b981;">Origin</strong>→<strong
+                                    style="color:#ef4444;">Destination</strong> route (<strong
+                                    style="color:#3b82f6;">blue</strong>) against the <strong
+                                    style="color:#10b981;">Origin</strong>→<strong
+                                    style="color:#3b82f6;">Survey</strong>→<strong
+                                    style="color:#ef4444;">Destination</strong> path (<strong
+                                    style="color:#ef4444;">red</strong>). If the detour is unreasonable, the pair is
+                                flagged as illogical — with full vehicle breakdown and distance metrics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════ UPCOMING ═══════════════════════════ -->
+        <section id="upcoming" class="section section-dark">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">What's Next</span>
+                    <h2>Upcoming in R&amp;V</h2>
+                    <p>The next evolution of ODIN's analytical capabilities — transforming raw validation into
+                        actionable intelligence.</p>
+                </div>
+
+                <div class="upcoming-grid">
+                    <div class="upcoming-card glass reveal">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M9 3v18" />
+                            </svg>
+                        </div>
+                        <h4>OD Matrix Generation</h4>
+                        <p>Automated Origin-Destination matrices with zonal aggregation and vehicle-class segmentation.
+                        </p>
+                        <span class="upcoming-status">In Development</span>
+                    </div>
+                    <div class="upcoming-card glass reveal delay-1">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h4>Desire Line Diagrams</h4>
+                        <p>Visual flow maps connecting origins to destinations with weighted line thickness representing
+                            trip volume.</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                    <div class="upcoming-card glass reveal delay-2">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M18 20V10M12 20V4M6 20v-6" />
+                            </svg>
+                        </div>
+                        <h4>Trip Length Frequency</h4>
+                        <p>Distribution analysis of trip distances — histograms and cumulative frequency curves for
+                            spatial pattern recognition.</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                    <div class="upcoming-card glass reveal delay-3">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                            </svg>
+                        </div>
+                        <h4>Commodity Analysis</h4>
+                        <p>Cross-tabulation of commodity codes with OD pairs. Abstract and detailed commodity breakdowns
+                            per route.</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                    <div class="upcoming-card glass reveal delay-4">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                            </svg>
+                        </div>
+                        <h4>Export Reports</h4>
+                        <p>One-click generation of formatted Excel and PDF reports with charts, maps, and summary
+                            statistics.</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                    <div class="upcoming-card glass reveal delay-5">
+                        <div class="upcoming-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
+                            </svg>
+                        </div>
+                        <h4>Base Number Estimations</h4>
+                        <p>Statistical expansion of survey sample data to estimate base-year traffic volumes using AADT
+                            and seasonal correction factors.</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════ TECH STACK ═══════════════════════════ -->
+        <section id="stack" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Under the Hood</span>
+                    <h2>The Stack</h2>
+                    <p>Performance-first technologies. Zero-latency workflows. Fully offline-capable.</p>
+                </div>
+                <div class="tech-grid reveal delay-1">
+                    <div class="tech-tag"><span class="tech-dot backend"></span>FastAPI</div>
+                    <div class="tech-tag"><span class="tech-dot spatial"></span>GeoPandas</div>
+                    <div class="tech-tag"><span class="tech-dot frontend"></span>Leaflet.js</div>
+                    <div class="tech-tag"><span class="tech-dot frontend"></span>Vanilla JS</div>
+                    <div class="tech-tag"><span class="tech-dot spatial"></span>Shapely</div>
+                    <div class="tech-tag"><span class="tech-dot backend"></span>Uvicorn</div>
+                    <div class="tech-tag"><span class="tech-dot frontend"></span>Google Maps API</div>
+                    <div class="tech-tag"><span class="tech-dot spatial"></span>PyProj</div>
+                    <div class="tech-tag"><span class="tech-dot backend"></span>Pandas</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer glass">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.svg" alt="ODIN" class="footer-logo">
+                <span class="footer-name">O D I N</span>
+            </div>
+            <p class="footer-tagline">Origin Destination Insights &amp; Navigator</p>
+            <p class="footer-copy">&copy; 2025 ODIN Project Team &middot; v2.5.3 &middot; Built for transportation
+                excellence.</p>
+            <a href="https://github.com/iamsankar999/ODIN/releases" class="footer-link" target="_blank"
+                rel="noopener">github.com/iamsankar999/ODIN</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
